@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}MARY & AMOS{% endblock %}</title>
+<!--
+    <link rel="stylesheet" href="static/plugins/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <script src="static/js/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <script src="static/plugins/bootstrap-4.5.3-dist/js/bootstrap.min.js"></script>
+    -->
+    <link href="static/css/babysite.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        BODY{
+            background-color: #6f42c1;
+        }
+        .foot{
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                {% block mainbody %}
+                    <p>original</p>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+    <div class="text-center jumbotron foot" style="margin-bottom:0;width: 100%">
+      <a href="https://www.miit.gov.cn/">苏ICP备2020063922号</a>
+    </div>
+</body>
+</html>
