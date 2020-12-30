@@ -17,14 +17,55 @@
     <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style type="text/css">
         BODY{
-            background-color: #6f42c1;
+            	color: #fff;
+	            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	            background-size: 400% 400%;
+	            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .nav{
+            border: none;
+        }
+        .nav-link{
+            color: white;
+        }
+        .nav-link:hover{
+            color: white;
+        }
+        .nav-item:hover{
+            filter: blur(20px);
         }
         .foot{
+            position: absolute;
+            bottom: 0;
             opacity: 0.4;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#">主页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">登录</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">注册</a>
+        </li>
+      </ul>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3">
@@ -34,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div class="text-center jumbotron foot" style="margin-bottom:0;width: 100%">
+    <div class="text-center foot" style="margin-bottom:0;width: 100%">
       <a href="https://www.miit.gov.cn/">苏ICP备2020063922号</a>
     </div>
 </body>
