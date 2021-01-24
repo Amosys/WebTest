@@ -21,5 +21,6 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.mainpage),
-    url('auth/', include('auth.urls'))
+    url('auth/', include('auth.urls')),
+    url('weixin/', include('weixin.urls')),
 ]
